@@ -17,10 +17,12 @@ export default class CadastroServiço extends Cadastro {
         console.log(`\nInício do cadastro de serviço`)
 
         let nome: string = this.entrada.receberTexto(`Por favor, informe o nome do serviço: `)
+        let preco: number = this.entrada.receberNumero(`\nPor favor, informe o preço do serviço: `)
 
         let servico = new Servico()
 
         servico.nome = nome
+        servico.preco = preco
 
         // Criamos uma nova entrada no array de serviços com um objeto Servico que acabamos de criar em cima
         this.servicos.push(servico)

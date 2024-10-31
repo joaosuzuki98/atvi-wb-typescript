@@ -14,6 +14,7 @@ export default class ListagemServicos extends Listagem {
         // Itera sobre cada item da lista serviços
         this.servicos.forEach(servico => {
             console.log(`Nome: ` + servico.nome)
+            console.log(`Preço: ` + servico.preco)
             console.log(`--------------------------------------`)
         })
         console.log(`\n`)
